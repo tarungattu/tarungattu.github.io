@@ -46,7 +46,7 @@ firebase.initializeApp(firebaseConfig);
 
 var countRef = firebase.database().ref('count');
 countRef.on('value', function(snapshot) {
-    count = snapshot.val()
+    count = snapshot.var()
     console.log(count)
 });
 
