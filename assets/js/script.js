@@ -3,6 +3,8 @@ const hours = document.querySelector('.hours');
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
 
+var count;
+
 clock = () => {
     let today = new Date();
     let h = today.getHours() % 12 + today.getMinutes() / 59; // 22 % 12 = 10pm
@@ -46,7 +48,7 @@ firebase.initializeApp(firebaseConfig);
 
 var countRef = firebase.database().ref('count');
 countRef.on('value', function(snapshot) {
-    var count = snapshot.val()
+    count = snapshot.val()
     console.log(count)
 });
 
