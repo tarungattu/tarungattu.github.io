@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,7 +124,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
+            background:
                 radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
@@ -131,9 +132,19 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(-10px, -10px) rotate(1deg); }
-            66% { transform: translate(10px, 5px) rotate(-1deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(-10px, -10px) rotate(1deg);
+            }
+
+            66% {
+                transform: translate(10px, 5px) rotate(-1deg);
+            }
         }
 
         .hero-content {
@@ -145,8 +156,15 @@
         }
 
         @keyframes glow {
-            0%, 100% { filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.3)); }
-            50% { filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.6)); }
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.3));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.6));
+            }
         }
 
         .hero h1 {
@@ -162,8 +180,15 @@
         }
 
         @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         .hero .subtitle {
@@ -254,8 +279,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: translateX(-50%) scaleX(1); }
-            50% { opacity: 0.7; transform: translateX(-50%) scaleX(1.2); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) scaleX(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: translateX(-50%) scaleX(1.2);
+            }
         }
 
         .section-title p {
@@ -337,8 +371,15 @@
         }
 
         @keyframes dotPulse {
-            0%, 100% { box-shadow: var(--glow); }
-            50% { box-shadow: 0 0 30px rgba(139, 92, 246, 0.8); }
+
+            0%,
+            100% {
+                box-shadow: var(--glow);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(139, 92, 246, 0.8);
+            }
         }
 
         .timeline-content h3 {
@@ -390,6 +431,7 @@
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s ease;
+
         }
 
         .skill-category:hover::before {
@@ -407,6 +449,14 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .skill-category:hover h3 {
+            color: white;
+        }
+
+        .skill-category:hover .skill-tag {
+            border-color: white;
         }
 
         .skill-tags {
@@ -594,6 +644,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateX(0);
@@ -605,6 +656,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateX(0);
@@ -616,6 +668,7 @@
                 opacity: 0;
                 transform: scale(0.8);
             }
+
             100% {
                 opacity: 1;
                 transform: scale(1);
@@ -661,6 +714,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
@@ -684,7 +738,9 @@
             <div class="hero-content">
                 <h1>Tarun Gattu</h1>
                 <div class="subtitle">Software Engineer & Researcher</div>
-                <p>Backend development specialist with expertise in scalable applications, database design, and algorithmic optimization. Currently developing cutting-edge solutions in automation and robotics with published research in industrial engineering.</p>
+                <p>Backend development specialist with expertise in scalable applications, database design, and
+                    algorithmic optimization. Currently developing cutting-edge solutions in automation and robotics
+                    with published research in industrial engineering.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -707,7 +763,9 @@
                         <h3>Algorithm Development and Research Intern</h3>
                         <div class="company">Bosch Automotive Electronics India Pvt. Ltd.</div>
                         <div class="date">Jan 2025 - June 2025</div>
-                        <p>Developed custom Genetic Algorithm achieving 20× speedup over linear programming. Built Power BI dashboards and contributed to autonomous maintenance concepts. Currently writing research article on scheduling algorithms.</p>
+                        <p>Developed custom Genetic Algorithm achieving 20× speedup over linear programming. Built Power
+                            BI dashboards and contributed to autonomous maintenance concepts. Currently writing research
+                            article on scheduling algorithms.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -716,7 +774,9 @@
                         <h3>Undergraduate Researcher</h3>
                         <div class="company">Center for Automation and Robotics Research</div>
                         <div class="date">July 2024 - Dec 2024</div>
-                        <p>Modeled sub-intelligent agents for AMRs, reducing wait time by 40%. Developed fault tolerance mechanisms and worked with ROS2 framework integration with SPADE for decentralized manufacturing environments.</p>
+                        <p>Modeled sub-intelligent agents for AMRs, reducing wait time by 40%. Developed fault tolerance
+                            mechanisms and worked with ROS2 framework integration with SPADE for decentralized
+                            manufacturing environments.</p>
                     </div>
                 </div>
             </div>
@@ -824,52 +884,96 @@
                 title: "Money Jar",
                 description: "A full-stack web application for personal and group money management with JWT authentication, RESTful APIs, and real-time expense settlement capabilities.",
                 technologies: ["TypeScript", "NestJS", "PostgreSQL", "JWT", "RESTful APIs"],
-                github: "#",
+                github: "https://github.com/rohitpadaki/money-jar",
                 demo: "#"
+            },
+            {
+                title: "Task-Checker: To-Do list App",
+                description: "This is my simple implementation of a react to do list app with tailwindcss and vite. It stores tasks in local storage so users can access the tasks in the same browser. The UI is designed to be pleasant and responsive.",
+                technologies: ["React", "Tailwindcss", "Javascript", "HTML5"],
+                github: "https://github.com/tarungattu/Task-Checker",
+                demo: "https://task-checker-1jy2.onrender.com/"
             },
             {
                 title: "Job Shop Scheduling with AMR",
                 description: "Python-based scheduling algorithm delivering solutions 300× faster than traditional methods, with integrated simulation pipeline for autonomous mobile robots.",
-                technologies: ["Python", "Flask", "React", "Genetic Algorithm", "Gazebo", "ROS2"],
-                github: "#",
-                demo: "#"
+                technologies: ["Python", "Genetic Algorithm", "Gazebo", "ROS2"],
+                github: "https://github.com/tarungattu/JobShopGA_withAMR",
+                demo: "https://www.linkedin.com/posts/tarun-gattu123_geneticalgorithm-amrs-gazebo-activity-7229072928032579585-fnpk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHnffsBYCItx0Eygv6mLYp2vhQBRDP-0PI",
+                publication: "https://www.growingscience.com/ijiec/Vol16/IJIEC_2025_3.pdf"
+            },
+            {
+                title: "Decentralized Multi Agent System Simulation",
+                description: "Designed and implemented a Multi-Agent System (MAS) to enhance the efficiency and robustness of a Lineless Assembly System by introducing distributed intelligence among shop floor entities, including AMRs and machines.",
+                technologies: ["Python", "Genetic Algorithm", "Gazebo", "ROS2", "SPADE", "Linux "],
+                github: "https://github.com/magichinmay/MultiAgentSystem",
+                demo: "https://www.linkedin.com/posts/tarun-gattu123_gazebo-ros2-nav2-activity-7294297906029674496-33sy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHnffsBYCItx0Eygv6mLYp2vhQBRDP-0PI",
+            },
+            {
+                title: "Flexible Job Shop Scheduling with AMRs",
+                description: "Developed a custom Genetic Algorithm to solve the Flexible Job shop problem, while considering the limited number of AMRs constraints. Built the algorithm in Python using OOPS and designed it to be extremely modular and reusable as a class.",
+                technologies: ["Python", "Genetic Algorithm", "Tkinter"],
+                github: "https://github.com/tarungattu/FlexibleJobShop_scheduling",
+                demo: "https://www.youtube.com/watch?v=yh2BeDMaMsE",
             },
             {
                 title: "Pharmacy Management System",
                 description: "Comprehensive database management system with C# GUI application, enabling 40% faster data processing and reducing design ambiguity through UML modeling.",
                 technologies: ["C#", "MS SQL Server", "UML", ".NET Framework"],
-                github: "#",
+                github: "https://github.com/tarungattu/PharmacyManagementSystem",
                 demo: "#"
             },
             {
                 title: "Autonomous Floor Cleaning Robot",
                 description: "User-friendly automated cleaning device for seniors with Arduino integration, achieving 50% improvement in cleaning accessibility through Design Thinking processes.",
                 technologies: ["Arduino", "SolidWorks", "Sensors", "SCRUM", "Product Management"],
-                github: "#",
-                demo: "#"
+                github: "https://github.com/tarungattu/FloorCleaningRobot",
+                demo: "https://www.linkedin.com/posts/amit-kore-itsamit_floorcleaningbot-homeautomation-designthinking-activity-7161803581757542400-RQSv/"
+            },
+            {
+                title: "Coin Sorting Robot",
+                description: "Designed and manufactured a coin sorting robot in my first year, while exploring technology in my Engineer exploration course. This robot not only counts the coins but also displays the count of each coin type on an LCD display. Its exceptional performance and accuracy earned it the Best Sorting Bot title in its semester. Used AutoDesk designing software for the designing of the robot.",
+                technologies: ["Arduino", "Mechatronics", "Autodesk inventor", "Problem Solving"],
+                github: "https://github.com/A-Division-2021-2022-Odd/Repo-12/wiki",
+                
             }
         ];
 
         // POPULATE PROJECTS
         function populateProjects() {
             const container = document.getElementById('projectsContainer');
-            container.innerHTML = projectsData.map(project => `
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>${project.title}</h3>
+            container.innerHTML = projectsData.map(project => {
+                const githubLink = project.github && project.github !== "#"
+                    ? `<a href="${project.github}" target="_blank">🐙 GitHub</a>`
+                    : "";
+
+                const demoLink = project.demo && project.demo !== "#"
+                    ? `<a href="${project.demo}" target="_blank">🔗 Live Demo</a>`
+                    : "";
+
+                const publicationLink = project.publication
+                    ? `<a href="${project.publication}" target="_blank">Article</a>`
+                    : "";
+
+                return `
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>${project.title}</h3>
+                </div>
+                <div class="project-content">
+                    <p>${project.description}</p>
+                    <div class="project-tech">
+                        ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                     </div>
-                    <div class="project-content">
-                        <p>${project.description}</p>
-                        <div class="project-tech">
-                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                        </div>
-                        <div class="project-links">
-                            <a href="${project.github}" target="_blank">🐙 GitHub</a>
-                            <a href="${project.demo}" target="_blank">🔗 Live Demo</a>
-                        </div>
+                    <div class="project-links">
+                        ${githubLink}
+                        ${demoLink}
+                        ${publicationLink}
                     </div>
                 </div>
-            `).join('');
+            </div>
+        `;
+            }).join('');
         }
 
         // SMOOTH SCROLLING
@@ -898,7 +1002,7 @@
             // ACTIVE NAV LINK
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             let currentSection = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 200;
@@ -946,7 +1050,7 @@
         // OBSERVE ELEMENTS FOR ANIMATION
         document.addEventListener('DOMContentLoaded', () => {
             populateProjects();
-            
+
             // Observe elements after a short delay to ensure they're rendered
             setTimeout(() => {
                 const elementsToAnimate = document.querySelectorAll('.section-title, .timeline-item, .skill-category, .project-card');
@@ -960,7 +1064,7 @@
                 if (entry.isIntersecting) {
                     const isEven = Array.from(entry.target.parentNode.children).indexOf(entry.target) % 2 === 0;
                     const animationType = isEven ? 'slideInFromLeft' : 'slideInFromRight';
-                    
+
                     setTimeout(() => {
                         entry.target.style.animation = `${animationType} 0.8s ease forwards`;
                     }, index * 300);
@@ -977,4 +1081,5 @@
         });
     </script>
 </body>
+
 </html>
